@@ -3,6 +3,7 @@
   <component name="Encoding">
     <file url="file://$PROJECT_DIR$/microservice-client-01" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/microservice-client-01/src/main/resources/application.yml" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/microservice-client-02" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/microservice-eureka" charset="UTF-8" />
   </component>
 </project>
