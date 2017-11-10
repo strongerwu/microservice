@@ -9,3 +9,8 @@ eureka:
 spring:
   application:
     name:  feign-client
+
+# 开启feign的熔断功能
+feign:
+  hystrix:
+    enabled: true
