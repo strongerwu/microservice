@@ -1,0 +1,10 @@
+server:
+  port: 8751   # 设置端口号
+
+eureka:
+  client:
+    service-url:
+      default-zone: http://localhost:8761/eureka/  # 指定服务注册中心的位置
+spring:
+  application:
+    name: client      # 客户端名称
