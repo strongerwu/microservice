@@ -8,5 +8,4 @@ eureka:
 
 spring:
   application:
-    name:  ribbon-client
-
+    name:  feign-client

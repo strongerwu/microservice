@@ -1,10 +1,10 @@
 server:
-  port: 8752   # ÉèÖÃ¶Ë¿ÚºÅ
+  port: 8752   # è®¾ç½®ç«¯å£å·
 
 eureka:
   client:
     service-url:
-      default-zone: http://localhost:8761/eureka/  # Ö¸¶¨·şÎñ×¢²áÖĞĞÄµÄÎ»ÖÃ
+      default-zone: http://localhost:8761/eureka/  # æŒ‡å®šæœåŠ¡æ³¨å†Œä¸­å¿ƒçš„ä½ç½®
 spring:
   application:
-    name: client      # ¿Í»§¶ËÃû³Æ
+    name: client      # å®¢æˆ·ç«¯åç§°
