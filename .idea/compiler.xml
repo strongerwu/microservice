@@ -11,6 +11,7 @@
         <module name="microservice-client-feign" />
         <module name="microservice-client-ribbon" />
         <module name="microservice-eureka" />
+        <module name="miscroservice-zuul" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
@@ -19,6 +20,7 @@
       <module name="microservice-client-feign" target="1.8" />
       <module name="microservice-client-ribbon" target="1.8" />
       <module name="microservice-eureka" target="1.8" />
+      <module name="miscroservice-zuul" target="1.8" />
     </bytecodeTargetLevel>
   </component>
 </project>

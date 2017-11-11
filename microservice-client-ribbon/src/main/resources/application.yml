@@ -5,11 +5,11 @@ eureka:
   client:
     service-url:
       default-zone: http://localhost:8761/eureka/
-    healthcheck:
-          enabled: true   # 开启健康检查（需要spring-boot-starter-actuator依赖）
-  instance:
-       lease-renewal-interval-in-seconds: 10       #租期更新时间间隔（默认30秒）
-       lease-expiration-duration-in-seconds: 30    #租期到期时间（默认90秒）不怕出错的话，时间可以更短
+#    healthcheck:
+#          enabled: true   # 开启健康检查（需要spring-boot-starter-actuator依赖）
+#  instance:
+#       lease-renewal-interval-in-seconds: 10       #租期更新时间间隔（默认30秒）
+#       lease-expiration-duration-in-seconds: 30    #租期到期时间（默认90秒）不怕出错的话，时间可以更短
 
 spring:
   application:

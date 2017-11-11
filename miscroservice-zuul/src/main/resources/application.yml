@@ -1,0 +1,25 @@
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:8761/eureka/
+server:
+  port: 8000
+spring:
+  application:
+    name: zuulcenter
+zuul:
+  routes:
+    api-a:
+      path: /api/**
+      serviceId: client  #这个方式 api/  可以直接访问url
+    api-b:
+      path: /feign/**
+      serviceId: feign-client
+    api-c:
+      path: /ribbon/**
+      serviceId: ribbon-client
+#  prefix: /api
+#  serviceId: customer  # 这个方式 api/ 后面必须添加 customer 才能访问得到
+#  host:
+#    connect-timeout-millis: 10000
+#    socket-timeout-millis: 60000
