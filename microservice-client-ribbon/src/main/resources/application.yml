@@ -5,8 +5,22 @@ eureka:
   client:
     service-url:
       default-zone: http://localhost:8761/eureka/
+    healthcheck:
+          enabled: true   # 开启健康检查（需要spring-boot-starter-actuator依赖）
+  instance:
+       lease-renewal-interval-in-seconds: 10       #租期更新时间间隔（默认30秒）
+       lease-expiration-duration-in-seconds: 30    #租期到期时间（默认90秒）不怕出错的话，时间可以更短
 
 spring:
   application:
     name:  ribbon-client
 
+#eureka:
+#  client:
+#    healthcheck:
+#      enabled: true   # 开启健康检查（需要spring-boot-starter-actuator依赖）
+#  instance:
+#    lease-renewal-interval-in-seconds: 10       #租期更新时间间隔（默认30秒）
+#    lease-expiration-duration-in-seconds: 30    #租期到期时间（默认90秒）不怕出错的话，时间可以更短
+
+# 这样就可以防止因保护模式而不将挂掉的服务踢出掉，防止ribbon负载时，轮训到挂掉的结点时，eureka因没删除结点而去访问eureka中挂掉而未删除的服务

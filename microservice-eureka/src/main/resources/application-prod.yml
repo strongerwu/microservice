@@ -1,0 +1,12 @@
+eureka:
+  client:
+    register-with-eureka: false
+    fetch-registry: false
+    service-url:
+      defaultZone: http://ip1:8761/eureka/,http://ip2:8761/eureka/
+
+#  可以配置注册到多个eureka上
+
+  server:
+    eviction-interval-timer-in-ms: 6000
+    enable-self-preservation: false

@@ -25,7 +25,7 @@ public class HomeController {
     @HystrixCommand(fallbackMethod = "ribbonHelloHystrix") //熔断器
     public String ribbonHello(String name){
         log.info("************执行 ribbonHello方法********* 入参[name]:"+name);
-        return restTemplate.getForObject("http://cilent/home/hello?userName="+name,String.class);
+        return restTemplate.getForObject("http://CLIENT/home/hello?name="+name,String.class);
     }
 
     /**
