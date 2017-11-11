@@ -4,11 +4,11 @@
 	<modelVersion>4.0.0</modelVersion>
 
 	<groupId>com.stronger</groupId>
-	<artifactId>miscroservice-zuul</artifactId>
+	<artifactId>microservice-zuul</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<packaging>jar</packaging>
 
-	<name>miscroservice-zuul</name>
+	<name>microservice-zuul</name>
 	<description>Demo project for Spring Boot</description>
 
 	<parent>

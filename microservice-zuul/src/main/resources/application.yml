@@ -6,7 +6,7 @@ server:
   port: 8000
 spring:
   application:
-    name: zuulcenter
+    name: zuul
 zuul:
   routes:
     api-a:

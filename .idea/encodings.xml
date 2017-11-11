@@ -8,6 +8,6 @@
     <file url="file://$PROJECT_DIR$/microservice-client-feign" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/microservice-client-ribbon" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/microservice-eureka" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/miscroservice-zuul" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/microservice-zuul" charset="UTF-8" />
   </component>
 </project>
